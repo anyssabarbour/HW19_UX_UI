@@ -1,0 +1,249 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+.content {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#mySkills-container {
+  /* border: orange dashed 1.5px; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 3% 3% 5% 3%;
+}
+
+#mySkills-container > h1 {
+  /* border: green dashed 1.5px; */
+  text-align: center;
+  width: 98%;
+  font-size: xx-large;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  padding: 0 0 3% 0;
+}
+
+#mySkills-container > div {
+  /* border: blue dashed 1.5px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 31%;
+  min-height: 300px;
+}
+
+#mySkills-container img { 
+  width: 200px;
+  align-self: center;
+  padding: 0 0 6% 0;
+}
+
+#mySkills-container p {
+  padding: 3% 5% 0 5%;
+}
+
+/* responsive css properties done with media queries below */
+@media only screen and (max-width: 640px) {
+  #mySkills-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 8% 0% 5% 0%;
+  }
+  #mySkills-container > h1 {
+    padding: 0% 0% 8% 0%;
+  }
+  
+  #mySkills-container > div {
+    max-width: 100%;
+    padding: 0% 0% 0% 0%;
+
+  }
+  
+  #mySkills-container img {
+    padding: 0% 0% 3% 0%;
+  }
+  
+  #mySkills-container p {
+    padding: 2% 7% 10% 8%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+/* my work grid container below */
+#myWork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: content 33% 33% 33%;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "CS-h1 CS-h1"
+    "CS1-img CS1-container"
+    "CS2-container CS2-img"
+    "CS3-img CS3-container";
+}
+
+.CS-h1 {
+    grid-area: CS-h1;
+}
+
+.CS1-img { 
+  grid-area: CS1-img;
+  justify-self: center;
+}
+
+.CS2-img { 
+  grid-area: CS2-img;  
+  justify-self: center;
+}
+
+.CS3-img { 
+  grid-area: CS3-img; 
+  justify-self: center;
+}
+
+.CS1 {
+    grid-area: CS1; 
+}
+.CS2 {
+    grid-area: CS2; 
+}
+.CS3 {
+    grid-area: CS3; 
+}
+
+#myWork-container h1 {
+  text-align: center;
+  width: 100%;
+  padding: 1em;
+  font-size: xx-large;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+}
+
+#myWork-container div { 
+  justify-self: center;
+  align-self: start;
+  width: 75%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start; 
+}
+
+#myWork-container p {
+  width:75%;
+}
+
+#myWork-container button {
+  align-self: flex-end;
+  padding: 1% .5% 1% .5%; 
+  margin: 5% 30%;
+  text-transform: uppercase;
+  letter-spacing: .15em; 
+  background-color: transparent;
+  border:none;
+  border-bottom: solid 1px grey;
+  white-space: nowrap; 
+  color:black;
+}
+
+   
+
+
+/* responsive css properties done with media queries below */
+@media only screen and (max-width: 640px) {
+  #myWork-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: content 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "CS-h1"
+      "CS1-img" 
+      "CS1-container"
+      "CS2-img"
+      "CS2-container" 
+      "CS3-img" 
+      "CS3-container";
+   }
+  
+  #myWork-container h1 {
+   padding: .5em;
+  }
+ 
+  #myWork-container div {
+    padding: 0% 5% 0% 5%;
+    align-item: center;
+    width: 100%;
+   }
+  
+  #myWork-container p {
+    width: 100%;
+  }
+  
+  #myWork-container button {
+    align-self: flex-end;
+    margin: 3% 3% 30% 3%;
+  }
+}
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
